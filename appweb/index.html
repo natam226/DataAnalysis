@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Unificación del registro de datos de Zaga Company</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Unificación del registro de datos de Zaga Company</h1>
+    </header>
+    
+    <img src="logoZaga.png" alt="Logo" height="100px" class="logo">
+
+    <form action="zagadata.php" method="post">
+        <label for="Fecha">Fecha:</label>
+        <input type="date" name="Fecha" id="Fecha">
+
+        <label for="Nombre">Nombre del Cliente:</label>
+        <input type="text" name="Nombre">
+
+        <label for="Apellido_del_Cliente">Apellido del Cliente:</label>
+        <input type="text" name="Apellido_del_Cliente">
+
+        <label for="Cedula_de_ciudadania_del_cliente">CC:</label>
+        <input type="text" name="Cedula_de_ciudadania_del_cliente">
+
+        <label for="Convenio">Seleccione el tipo de convenio:</label>
+        <select name="Convenio" id="Convenio">
+            <option value="Colpensiones">Colpensiones</option>
+            <option value="CREMIL">CREMIL</option>
+            <option value="Fiduprevisora">Fiduprevisora</option>
+            <option value="FODE">FODE</option>
+            <option value="Mapfre">Mapfre Colombia Vida Seguros Pensionados</option>
+            <option value="Proteccion">Proteccion</option>
+            <option value="SecrePalmira">Secretaria de Palmira</option>
+            <option value="Sura">Sura</option>
+        </select>
+
+        <label for="Sexo">Seleccione el sexo del cliente:</label>
+        <select name="Sexo" id="Sexo">
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+            <option value="N/A">N/A</option>
+        </select>
+
+        <label for="Monto">Monto:</label>
+        <input type="number" step="0.01" min="0" max="100000000000" name="Monto" id="Monto">
+
+        <label for="Asesor">Seleccione el Asesor:</label>
+        <select name="Asesor" id="Asesor">
+            <option value="Alejandro">Alejandro</option>
+            <option value="Camila">Camila</option>
+            <option value="Carolina">Carolina</option>
+            <option value="Catherine">Catherine</option>
+            <option value="CesarAndres">CesarAndres</option>
+            <option value="Daniel">Daniel</option>
+            <option value="DianaCruz">DianaCruz</option>
+            <option value="DianaRestrepo">DianaRestrepo</option>
+            <option value="DorianCastro">DorianCastro</option>
+            <option value="Eleonora">Eleonora</option>
+            <option value="ElizaHernandez">ElizaHernandez</option>
+            <option value="DorianCastro">DorianCastro</option>
+            <option value="Esteban">Esteban</option>
+            <option value="Genesis">Genesis</option>
+            <option value="JavierVictoria">JavierVictoria</option>
+            <option value="Jenny">Jenny</option>
+            <option value="Jorge">Jorge</option>
+            <option value="Katherine">Katherine</option>
+            <option value="LeslyAndrea">LeslyAndrea</option>
+            <option value="LorenaBedoya">LorenaBedoya</option>
+            <option value="MaryLuz">MaryLuz</option>
+            <option value="NidiaMontoya">NidiaMontoya</option>
+            <option value="Sorangela">Sorangela</option>
+            <option value="William">William</option>
+            <option value="Yudi">Yudi</option>
+        </select>
+
+        <label for="Estado">Seleccione el estado de credito:</label>
+        <select name="Estado" id="Estado">
+            <option value="Radicado">Radicado</option>
+            <option value="Negado">Negado</option>
+            <option value="Desembolsado">Desembolsado</option>
+            <option value="Devuelto">Devuelto</option>
+            <option value="Desistio">Desistio</option>
+        </select>
+
+        <label for="Entidad">Seleccione la entidad:</label>
+        <select name="Entidad" id="Entidad">
+            <option value="Avista">Avista</option>
+            <option value="AvVillas">AvVillas</option>
+            <option value="Ban100">Ban100</option>
+            <option value="Fianti">Fianti</option>
+            <option value="Juriscoop">Juriscoop</option>
+            <option value="Mission">Mission</option>
+        </select>
+
+        <input type="submit" name="Agregar" value="Agregar">
+    </form>
+</body>
+
+</html>
